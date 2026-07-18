@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEMI-PRIVATE: this line tells Google & other engines NOT to index the page.
+     Anyone with the link can see it, but it won't show up in search results. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Daniela Perea, Marketing Lead · Selected Work</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --paper:#FBFAF7;
+    --ink:#1A1A1A;
+    --ink-soft:#565148;
+    --red:#D81E32;
+    --red-deep:#B0121F;
+    --red-tint:#FBE9EB;
+    --line:#E7E3DA;
+    --card:#FFFFFF;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:900px;margin:0 auto;padding:0 24px;}
+  a{color:var(--red-deep);}
+
+  /* header */
+  header.top{border-bottom:1px solid var(--line);}
+  .top .wrap{display:flex;justify-content:space-between;align-items:baseline;padding:20px 24px;flex-wrap:wrap;gap:6px;}
+  .brandname{font-family:'Playfair Display',serif;font-weight:800;font-size:19px;letter-spacing:.01em;}
+  .brandname span{color:var(--red);}
+  .topcontact{font-size:13.5px;color:var(--ink-soft);}
+  .topcontact a{color:var(--ink-soft);text-decoration:none;}
+  .topcontact a:hover{color:var(--red-deep);}
+
+  /* hero */
+  .hero{padding:72px 0 20px;}
+  .eyebrow{
+    font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--red);margin:0 0 22px;
+  }
+  h1{
+    font-family:'Playfair Display',serif;font-weight:800;
+    font-size:clamp(40px,7.5vw,76px);line-height:1.02;letter-spacing:-.01em;
+    margin:0 0 24px;
+  }
+  .hero .lede{font-size:19px;color:var(--ink-soft);max-width:60ch;margin:0;}
+  .avail{margin-top:18px;font-size:14px;color:var(--ink-soft);display:inline-flex;align-items:center;gap:9px;}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--red);display:inline-block;}
+
+  /* stat band */
+  .stats{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    margin:56px 0 0;
+  }
+  .stat{padding:26px 20px;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat .n{font-family:'Playfair Display',serif;font-weight:700;font-size:34px;color:var(--red);line-height:1;}
+  .stat .l{font-size:12.5px;color:var(--ink-soft);margin-top:10px;line-height:1.4;}
+
+  /* case */
+  .case{padding:76px 0;border-bottom:1px solid var(--line);}
+  .case-eyebrow{
+    font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-soft);margin:0 0 14px;
+  }
+  .case-eyebrow b{color:var(--red);}
+  .case h2{
+    font-family:'Playfair Display',serif;font-weight:700;
+    font-size:clamp(28px,4.4vw,42px);line-height:1.08;letter-spacing:-.01em;margin:0 0 26px;max-width:20ch;
+  }
+  .block{margin-bottom:24px;}
+  .block h3{
+    font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--red);margin:0 0 8px;
+  }
+  .block p{margin:0;font-size:16.5px;color:var(--ink-soft);max-width:66ch;}
+  .block ul{margin:8px 0 0;padding-left:0;list-style:none;max-width:66ch;}
+  .block li{font-size:16px;color:var(--ink-soft);padding-left:22px;position:relative;margin-bottom:7px;}
+  .block li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:2px;background:var(--red);}
+
+  /* big number inline for a case */
+  .resultline{
+    font-family:'Playfair Display',serif;font-size:22px;color:var(--ink);
+    border-left:3px solid var(--red);padding-left:18px;margin:4px 0 0;max-width:60ch;line-height:1.4;
+  }
+  .resultline b{color:var(--red-deep);font-weight:700;}
+
+  /* systems grid */
+  .sysgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;}
+  .sys{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;}
+  .sys .st{font-weight:600;font-size:15px;margin-bottom:3px;}
+  .sys .sd{font-size:14px;color:var(--ink-soft);}
+
+  /* pull quotes */
+  .quotes{margin-top:34px;display:grid;gap:16px;}
+  .quote{background:var(--red-tint);border-radius:14px;padding:24px 26px;}
+  .quote p{
+    font-family:'Playfair Display',serif;font-style:italic;font-size:20px;
+    color:var(--ink);margin:0 0 12px;line-height:1.4;
+  }
+  .quote .who{font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--red-deep);font-style:normal;}
+
+  /* screenshot placeholder, REPLACE the <img src> to use your own image -->*/
+  figure{margin:28px 0 0;}
+  .shot{
+    border:1.5px dashed var(--line);border-radius:12px;background:#fff;
+    min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:30px;color:#9a948a;
+  }
+  .shot svg{width:34px;height:34px;margin-bottom:10px;opacity:.5;}
+  .shot .sh1{font-weight:600;font-size:14px;color:#8a847a;}
+  .shot .sh2{font-size:12.5px;margin-top:4px;}
+  figcaption{font-size:12.5px;color:var(--ink-soft);margin-top:9px;}
+  figure img{width:100%;border-radius:12px;border:1px solid var(--line);display:block;}
+
+  /* closing */
+  .closing{padding:80px 0 70px;text-align:center;}
+  .closing h2{font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(28px,4.6vw,44px);margin:0 0 18px;}
+  .closing p{font-size:17px;color:var(--ink-soft);max-width:52ch;margin:0 auto 28px;}
+  .btn{
+    display:inline-block;background:var(--red);color:#fff;text-decoration:none;
+    font-weight:600;font-size:16px;padding:15px 30px;border-radius:999px;transition:background .15s;
+  }
+  .btn:hover{background:var(--red-deep);color:#fff;}
+  .closing .alt{display:block;margin-top:18px;font-size:14px;color:var(--ink-soft);}
+
+  footer{border-top:1px solid var(--line);padding:26px 0;text-align:center;font-size:13px;color:#9a948a;}
+
+  @media (max-width:680px){
+    .stats{grid-template-columns:1fr 1fr;}
+    .stat:nth-child(2){border-right:none;}
+    .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line);}
+    .sysgrid{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .fade{opacity:0;transform:translateY(14px);animation:rise .7s ease forwards;}
+    @keyframes rise{to{opacity:1;transform:none;}}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brandname">Daniela Perea<span>.</span></div>
+    <div class="topcontact"><a href="mailto:danielapeream@outlook.es">danielapeream@outlook.es</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/danielapeream" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap fade">
+    <p class="eyebrow">Marketing Lead · Growth &amp; Performance</p>
+    <h1>I build marketing<br>functions, and the<br>results to prove it.</h1>
+    <p class="lede">9+ years across LATAM, Europe and North America, from running paid media for global brands at Expedia Group to building a startup's entire marketing function from scratch. Strategist and builder in equal measure.</p>
+    <span class="avail"><span class="dot"></span> Open to remote global opportunities · Based in Colombia (GMT-5)</span>
+
+    <div class="stats">
+      <div class="stat"><div class="n">$2M+</div><div class="l">Ad revenue managed at Expedia</div></div>
+      <div class="stat"><div class="n">57%</div><div class="l">Of campaigns at ROAS &gt;20</div></div>
+      <div class="stat"><div class="n">94%</div><div class="l">Campaign delivery in full</div></div>
+      <div class="stat"><div class="n">3 mo</div><div class="l">To build a full marketing function</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE 1, FREIGHTSIMPLE ============ -->
+<section class="case">
+  <div class="wrap">
+    <p class="case-eyebrow"><b>01</b> &nbsp;·&nbsp; FreightSimple Technologies · Marketing Lead · 2026</p>
+    <h2>Building a marketing function from zero</h2>
+
+    <div class="block">
+      <h3>The context</h3>
+      <p>FreightSimple is a B2B logistics SaaS startup, think "Expedia for LTL freight." I joined as the sole marketer, with no brand system, no reporting, and no marketing playbook in place.</p>
+    </div>
+
+    <div class="block">
+      <h3>What I did</h3>
+      <ul>
+        <li>Built the entire marketing function in my first three months: brand system, positioning, messaging and go-to-market foundation.</li>
+        <li>Launched an end-to-end LinkedIn content engine: asset library, publishing calendar and a repeatable monthly content mix.</li>
+        <li>Designed executive dashboards integrating Google Ads, HubSpot, SEMrush, GA4 and CRM data into a single source of truth.</li>
+        <li>Built post-booking lifecycle and retention email sequences to drive activation and repeat usage.</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>The result</h3>
+      <p class="resultline">A company that went from <b>no marketing function</b> to a running system (brand, content, reporting and lifecycle) <b>owned end to end</b>, with leadership visibility into what drives growth.</p>
+    </div>
+
+    <figure>
+      <img src="freightsimple-linkedin.png" alt="FreightSimple LinkedIn content system">
+      <figcaption>Public LinkedIn content from the engine I built for FreightSimple, brand system, series formats and case-study posts.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CASE 2, EXPEDIA ============ -->
+<section class="case">
+  <div class="wrap">
+    <p class="case-eyebrow"><b>02</b> &nbsp;·&nbsp; Expedia Group · Client Success Manager, EMEA &amp; Nordics · 2024</p>
+    <h2>Performance at scale, and the systems behind it</h2>
+
+    <div class="block">
+      <h3>The context</h3>
+      <p>I managed digital advertising for a portfolio of global airline and travel brands, including Virgin Atlantic, Microsoft UK and Croatian Airlines, across EMEA and North America, owning campaigns from launch to reporting.</p>
+    </div>
+
+    <div class="block">
+      <h3>The numbers</h3>
+      <ul>
+        <li>Managed ~50 campaigns across two quarters, contributing to <strong>$2M+ in managed revenue</strong> at a <strong>94% delivery-in-full</strong> rate.</li>
+        <li><strong>57% of campaigns achieved ROAS &gt;20</strong>; 23% exceeded ROAS &gt;10.</li>
+        <li><strong>70%+ of campaigns surpassed CTR benchmarks</strong> across placements.</li>
+        <li>Formal performance rating: <strong>"Consistently Achieves."</strong></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3>The systems I built</h3>
+      <div class="sysgrid">
+        <div class="sys"><div class="st">Canva mockup system</div><div class="sd">Templates letting the team preview assets before design/client submission, cutting revisions and turnaround time.</div></div>
+        <div class="sys"><div class="st">Real-time campaign tracker</div><div class="sd">An Excel tool giving the sales team live campaign status, risk flags and metrics, used in weekly 1:1s.</div></div>
+        <div class="sys"><div class="st">Airline info "Looker"</div><div class="sd">Interactive dashboard consolidating landing-page, IATA-code and SharePoint libraries for faster, error-free production.</div></div>
+        <div class="sys"><div class="st">Client best-practice handbooks</div><div class="sd">Native ads &amp; Flight-Listing guides with curated example libraries to align clients and lift creative quality.</div></div>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <div class="quote">
+        <p>"Despite joining only 7 months ago, Daniela hit the ground running, managing nearly 50 campaigns and generating almost $2 million in revenue."</p>
+        <span class="who">– Manager review, Expedia Group</span>
+      </div>
+      <div class="quote">
+        <p>"Daniela is a key reason why I'm the only seller to exceed targets in both Q1 and Q2."</p>
+        <span class="who">– Business Development Manager, Expedia Group</span>
+      </div>
+      <div class="quote">
+        <p>"Her deep knowledge of campaign strategy and optimization is truly impressive, and she consistently goes above and beyond for the team and our clients."</p>
+        <span class="who">– Teammate, Expedia Group</span>
+      </div>
+      <div class="quote">
+        <p>"We love these assets so much we were thinking of using them as an evergreen asset." This from an airline client that had previously called the same assets poor, after I redesigned them.</p>
+        <span class="who">– Airline client, after asset redesign</span>
+      </div>
+    </div>
+
+    <figure>
+      <img src="canva-mockup-system.png" alt="Canva mockup template system">
+      <figcaption>The Canva template system I built so the team could preview assets before design and client submission.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ CASE 3, SYSTEMS & AUTOMATION ============ -->
+<section class="case">
+  <div class="wrap">
+    <p class="case-eyebrow"><b>03</b> &nbsp;·&nbsp; Systems &amp; Automation · 2025&ndash;2026</p>
+    <h2>Turning invisible marketing into measurable revenue</h2>
+
+    <div class="block">
+      <h3>The context</h3>
+      <p>Across roles, the same problem kept appearing: marketing was running, but no one could see what it produced. Broken attribution, manual handoffs, and metrics scattered across a dozen platforms. So I built the plumbing to fix it.</p>
+    </div>
+
+    <div class="block">
+      <h3>Rebuilt attribution from zero</h3>
+      <p>A lifecycle program was crediting zero conversions to any campaign or flow. I audited the setup, diagnosed the broken loop, and rebuilt it so conversions were correctly credited, creating, for the first time, a reliable line of sight into the revenue marketing generates.</p>
+    </div>
+
+    <div class="block">
+      <h3>Unified performance dashboards</h3>
+      <p>Built cross-platform dashboards (PostHog and internal tooling) tracking every metric in one place, from paid media to organic, so leadership could see performance and marketing's revenue contribution at a glance instead of stitching together exports.</p>
+    </div>
+
+    <div class="block">
+      <h3>Automated client intake, no-code</h3>
+      <p>Designed a brief-intake system using tools the team already had: a Google Form feeding a spreadsheet, with Apps Script automatically generating and routing brief emails between the client and the production team. Faster handoffs, fewer dropped requests, zero new software.</p>
+    </div>
+
+    <div class="block">
+      <h3>The result</h3>
+      <p class="resultline">Marketing went from a <b>black box</b> to a system where performance, attribution and revenue contribution are <b>measurable and automated</b>, the difference between guessing and knowing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ALSO IN MY TOOLKIT ============ -->
+<section class="case" style="border-bottom:none;padding-bottom:20px;">
+  <div class="wrap">
+    <p class="case-eyebrow"><b>+</b> &nbsp;·&nbsp; Also in my toolkit</p>
+    <div class="sysgrid">
+      <div class="sys"><div class="st">Website &amp; UI</div><div class="sd">Website editing, UI design, landing-page optimization and CRO across the funnel.</div></div>
+      <div class="sys"><div class="st">No-code automation</div><div class="sd">Google Apps Script, forms-to-sheets pipelines, and workflow automation with existing tools.</div></div>
+      <div class="sys"><div class="st">Design &amp; content</div><div class="sd">Brand systems, Canva, short-form creative, and AI-assisted content production.</div></div>
+      <div class="sys"><div class="st">Paid media</div><div class="sd">Meta, Google &amp; TikTok Ads: campaign management, A/B testing and audience segmentation.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="closing">
+  <div class="wrap">
+    <h2>Let's talk.</h2>
+    <p>Looking for a remote Marketing Lead / Head of Marketing role where I can own the function and take it further.</p>
+    <a class="btn" href="mailto:danielapeream@outlook.es">Get in touch</a>
+    <span class="alt">danielapeream@outlook.es · <a href="https://linkedin.com/in/danielapeream" target="_blank" rel="noopener">linkedin.com/in/danielapeream</a></span>
+  </div>
+</section>
+
+<footer>© 2026 Daniela Perea Melo</footer>
+
+</body>
+</html>
